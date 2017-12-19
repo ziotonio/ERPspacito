@@ -20,18 +20,19 @@ public class LoadResourceListener implements ServletContextListener{
 	}
 
 	public void contextInitialized(ServletContextEvent event) {
-		//服务器启动时，加载所有全资源数据:JDBC
+		//æœ�åŠ¡å™¨å�¯åŠ¨æ—¶ï¼ŒåŠ è½½æ‰€æœ‰å…¨èµ„æº�æ•°æ�®:JDBC
 		Connection conn = null;
+		JdbcConnectionConfig conf = new JdbcConnectionConfig();
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/erpdb1","root","root");
+			conn = DriverManager.getConnection(conf.getUrl(), conf.getUser(), conf.getPass());
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("select url from tbl_res");
 			List<String> temp = new ArrayList<String>();
 			while(rs.next()){
 				temp.add(rs.getString("url"));
 			}
-			//将集合放入ServletContext范围
+			//å°†é›†å�ˆæ”¾å…¥ServletContextèŒƒå›´
 			event.getServletContext().setAttribute("resAllUrl", temp);
 		} catch (Exception e) {
 			e.printStackTrace();
