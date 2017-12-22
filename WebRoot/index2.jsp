@@ -1,3 +1,2 @@
-<script type="text/javascript">
-	document.location="jsps/login.jsp";
+<script type="text/javascript" src="js/index2.js">
 </script>
