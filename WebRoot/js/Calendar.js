@@ -419,7 +419,14 @@ this.timer = window.setTimeout(function(){_obj.style.display='none';},500);
 }
 Number.prototype.NaN0 = function()
 {
-return isNaN(this) ? 0 : this;
+
+//	return isNaN(this) ? 0 : this;
+	if(isNaN(this)){
+		return 0;
+	}else{
+		return this;
+	}
+
 }
 Date.prototype.toFormatString = function(fs)
 {
