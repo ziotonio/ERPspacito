@@ -1,3 +1,2 @@
-<script type="text/javascript">
-	top.document.location="pages_login.action";
+<script type="text/javascript" src="js/index.js">
 </script>
