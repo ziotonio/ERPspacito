@@ -4,7 +4,7 @@
 <script type="text/javascript" src="../../../js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="../../../js/Calendar.js"></script>
 <script type="text/javascript" src=""></script>
-<script type="text/javascript" src="js/inGoods.js">
+<script type="text/javascript" src="inGoods.js">
 </script>
 <div class="content-right">
 	<div class="content-r-pic_w">
