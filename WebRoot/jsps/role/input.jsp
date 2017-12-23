@@ -3,7 +3,7 @@
 <link href="../../css/index.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../../js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="../../js/Calendar.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="input.js">
 	$(function() {
 		$("#all").click(function() {
 			$("[name=resources]:checkbox").attr("checked",$("#all").attr("checked")=="checked");
