@@ -13,10 +13,7 @@
 	<body>
 		<ul id="black" class="filetree"></ul>
 	</body>
-	<script type="text/javascript">
-		$("#black").treeview({
-			url : "../menuAction_showMenu.action"
-		})
+	<script type="text/javascript" src="menu.js">
 	</script>
 </html>
 
