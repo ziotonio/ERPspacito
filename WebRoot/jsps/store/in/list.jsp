@@ -3,13 +3,7 @@
 <%@taglib prefix="s" uri="/struts-tags"%>
 <link href="../../../css/index.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../../../js/jquery-1.8.3.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$("#query").click(function() {
-			$("[name='pageNum']").val(1);
-			$("form:first").submit();
-		});
-	});
+<script type="text/javascript" src="list.js">
 </script>
 <div class="content-right">
 	<div class="content-r-pic_w">
