@@ -4,7 +4,6 @@
 	<head>
 		<link rel="stylesheet"	href="js/treeview/jquery.treeview.css" />
 		<link rel="stylesheet"	href="js/treeview/screen.css" />
-		
 		<script src="js/jquery-1.8.3.js"	type="text/javascript"></script>
 		<script	src="js/treeview/jquery.cookie.js" type="text/javascript"></script>
 		<script	src="js/treeview/jquery.treeview.min.js"	type="text/javascript"></script>
@@ -14,10 +13,7 @@
 	<body>
 		<ul id="black" class="filetree"></ul>
 	</body>
-	<script type="text/javascript">
-		$("#black").treeview({
-			url : "menu_showMenu.action"
-		})
+	<script type="text/javascript" src="menu.js">
 	</script>
 </html>
 
