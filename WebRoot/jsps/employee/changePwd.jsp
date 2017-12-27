@@ -1,8 +1,10 @@
+<%-- changePwd.jsp --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <link href="../../css/index.css" rel="stylesheet" type="text/css" />
-<div class="content-right">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<div class="content-right"> 
 	<div class="content-r-pic_w">
 		<div style="margin:8px auto auto 12px;margin-top:6px">
 			<span class="page_title">修改密码</span>
