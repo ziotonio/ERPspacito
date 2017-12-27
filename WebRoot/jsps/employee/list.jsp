@@ -1,3 +1,4 @@
+<%-- list.jsp --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
@@ -5,7 +6,7 @@
 <script type="text/javascript" src="../../js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="../../js/Calendar.js"></script>
 <script typer="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="list.js">
+<script type="text/javascript" src="js/list.js">
 </script>
 <div class="content-right">
 	<div class="content-r-pic_w">
