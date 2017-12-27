@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%-- list.jsp --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
-<link href="css/index.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
-<script type="text/javascript" src="js/Calendar.js"></script>
-<script type="text/javascript" src="input.js">
+<link href="../../css/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../../js/Calendar.js"></script>
+<script type="text/javascript" src="list.js">
 </script>
 <div class="content-right">
 	<div class="content-r-pic_w">
@@ -12,77 +13,56 @@
 		</div>
 	</div>
 	<div class="content-text">
-		<div class="square-order">
-			<form action="list.jsp" method="post">
-  			<div style="border:1px solid #cecece;">
-				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
-				  <tr bgcolor="#FFFFFF">
-				    <td>&nbsp;</td>
-				  </tr>
-				</table>
-				<table width="100%"  border="0" cellpadding="0" cellspacing="0">
-				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">菜单名称</td>
-				      <td width="32%">
-				      	<input type="text" size="25"/>
-				      </td>
-				      <td width="18%" align="center">所属父菜单</td>
-				      <td width="32%">
-				      	<select style="width:190px">
-				      		<option>1111</option>
-				      		<option>1111</option>
-				      	</select>
-				      </td>
-				    </tr>
-				    <tr  bgcolor="#FFFFFF">
-				      <td colspan="4">&nbsp;</td>
-				    </tr>
-				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">URL</td>
-				      <td width="82%" colspan="3">
-				      	<input type="text" size="82"/>
-				      </td>
-				    </tr>
-				    <tr  bgcolor="#FFFFFF">
-				      <td colspan="4">&nbsp;</td>
-				    </tr>
-				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">角色名称</td>
-				      <td width="82%" colspan="3">
-				      	<input type="checkbox" id="all">全选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				      	<input type="checkbox" id="reverse">反选
-				      </td>
-				    </tr>
-				    <tr  bgcolor="#FFFFFF">
-				      <td width="18%" height="30" align="center">&nbsp;</td>
-				      <td width="82%" colspan="3">
-				      	<input type="checkbox"/>超级管理员
-				      	<input type="checkbox"/>销售部主管
-				      	<input type="checkbox"/>销售部员工
-				      </td>
-				    </tr>
-				    <tr  bgcolor="#FFFFFF">
-				      <td colspan="4">&nbsp;</td>
-				    </tr>
+		<form action="list.jsp" method="post">
+			<div class="square-o-top">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0"
+					style="font-size:14px; font-weight:bold; font-family:"黑体";">
+					<tr>
+						<td width="68" height="30">&nbsp;</td>
+						<td width="123">&nbsp;</td>
+						<td width="62">菜单名称</td>
+						<td width="142"><input type="text" size="18" /></td>
+						<td width="60">所属菜单</td>
+						<td width="149">
+							<select class="kuan">
+								<option value="-1">----请-选-择----</option>
+								<option value="1">商品管理</option>
+								<option value="0">采购管理</option>
+							</select>
+						</td>
+						<td width="70"><a id="query"> <img src="../../images/can_b_01.gif" border="0" /> </a></td>
+						<td width="70"><a href="./input.jsp"><img src="../../images/can_b_02.gif" border="0" /></a></td>
+					</tr>
 				</table>
 			</div>
-			<div class="order-botton">
-				<div style="margin:1px auto auto 1px;">
-					<table width="100%"  border="0" cellpadding="0" cellspacing="0">
-					  <tr>
-					    <td>
-					    	<a href="javascript:document.forms[0].submit()"><img src="images/order_tuo.gif" border="0" /></a>
-					    </td>
-					    <td>&nbsp;</td>
-					    <td><a href="#"><img src="images/order_tuo.gif" border="0" /></a></td>
-					    <td>&nbsp;</td>
-					    <td><a href="#"><img src="images/order_tuo.gif" border="0" /></a></td>
-					  </tr>
-					</table>
-				</div>
+			<!--"square-o-top"end-->
+			<div class="square-order">
+				<table width="100%" border="1" cellpadding="0" cellspacing="0">
+					<tr align="center"
+						style="background:url(../../images/table_bg.gif) repeat-x;">
+						<td width="25%" height="30">菜单名称</td>
+						<td width="25%">所属菜单</td>
+						<td width="25%">URL</td>
+						<td width="25%">操作</td>
+					</tr>
+					<tr align="center" bgcolor="#FFFFFF">
+						<td height="30">销售订单</td>
+						<td>销售管理</td>
+						<td>sellAction_order.action</td>
+						<td>
+							<img src="../../images/icon_3.gif" /> 
+							<span style="line-height:12px; text-align:center;"> 
+								<a href="./input.jsp" class="xiu">修改</a> 
+							</span> 
+							<img src="../../images/icon_04.gif" /> 
+							<span style="line-height:12px; text-align:center;"> 
+								<a href="javascript:void(0)" class="xiu" onclick="showMsg('是否删除该项数据？',318)">删除</a>
+							</span>
+						</td>
+					</tr>
+				</table>
 			</div>
-			</form>
-		</div><!--"square-order"end-->
-	</div><!--"content-text"end-->
-	<div class="content-bbg"><img src="images/content_bbg.jpg" /></div>
+		</form>
+	</div>
+	<div class="content-bbg"></div>
 </div>
