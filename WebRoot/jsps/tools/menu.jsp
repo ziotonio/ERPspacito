@@ -14,7 +14,10 @@
 	<body>
 		<ul id="black" class="filetree"></ul>
 	</body>
+	<%-- Here starts the javascript call function --%>
 	<script type="text/javascript" src="menu.js">
 	</script>
 </html>
+
+<%-- end of menu.jsp --%>
 
