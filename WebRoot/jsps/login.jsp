@@ -8,6 +8,7 @@
 <link href="../css/index.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
 <title>蓝源进销存(教学版)-系统登录页</title>
+<%-- Here starts the javascript call function --%>
 <script type="text/javascript" src="login.js">
 </script>
 </head>
@@ -61,3 +62,4 @@
 	</div>
 </body>
 </html>
+<%-- end of login.jsp --%>
