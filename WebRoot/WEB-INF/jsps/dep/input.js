@@ -1,5 +1,5 @@
 /**
- * this function is called in input.jsp file
+ * this function is called in input.jsp file 
  * @returns
  */
 $(function() {
