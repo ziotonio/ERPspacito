@@ -3,6 +3,7 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <link href="../../css/index.css" rel="stylesheet" type="text/css" />
+<%-- Call the jquery library --%>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <div class="content-right"> 
 	<div class="content-r-pic_w">
@@ -69,3 +70,4 @@
 	</div><!--"content-text"end-->
 	<div class="content-bbg"><img src="../../images/content_bbg.jpg" /></div>
 </div>
+<%-- end of changePwd.jsp --%>
