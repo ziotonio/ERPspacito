@@ -3,6 +3,7 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<%-- Here starts the javascript call function --%>
 <script type="text/javascript" src="paging.js">
 </script>
 <br/>
@@ -26,3 +27,4 @@
 		<td width="12%">当前第<span style="color:red;">${pageNum}</span>/${pageCount}页</td>
 	</tr>
 </table>
+<%-- end of paging.jsp --%>
