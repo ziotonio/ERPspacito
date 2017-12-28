@@ -73,6 +73,7 @@
 	margin-right:18px;
 }
 </style>
+<%-- Here starts the javascript call function --%>
 <script type="text/javascript" src="mask.js">
 </script>
 
@@ -95,4 +96,4 @@
 	</div>
 	<div class="content-bbg content-msg-size content-msg-bottom"></div>
 </div>
-
+<%-- end of mask.jsp --%>
