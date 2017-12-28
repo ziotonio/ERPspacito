@@ -3,6 +3,7 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <link href="../../../css/index.css" rel="stylesheet" type="text/css" />
+<%-- call of jquery lib --%>
 <script type="text/javascript" src="../../../js/jquery-1.8.3.js"></script>
 <div class="content-right">
 	<div class="content-r-pic_w">
@@ -82,3 +83,4 @@
 	</div>
 	<div class="content-bbg"></div>
 </div>
+<%-- end of inDetailList.jsp --%>
