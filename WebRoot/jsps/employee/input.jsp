@@ -4,6 +4,7 @@
 <link href="../../css/index.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="../../js/Calendar.js"></script>
+<%-- Here starts the javascript call function --%>
 <script type="text/javascript" src="input.js">
 </script>
 <div class="content-right">
@@ -140,3 +141,4 @@
 	</div><!--"content-text"end-->
 	<div class="content-bbg"><img src="../../images/content_bbg.jpg" /></div>
 </div>
+<%-- end of input.jsp --%>
