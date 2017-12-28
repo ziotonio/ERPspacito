@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../css/index.css" rel="stylesheet" type="text/css" />
 <title>北京蓝源进销存系统(教学版)-系统主页</title>
+<%-- jquery lib --%>
 <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
 </head>
 <body>
@@ -172,3 +173,4 @@
 	<%@include file="/jsps/tools/mask.jsp"%>
 </body>
 </html>
+<%-- end of main.jsp --%>
