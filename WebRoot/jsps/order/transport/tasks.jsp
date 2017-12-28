@@ -3,6 +3,7 @@
 <%@taglib prefix="s" uri="/struts-tags"%>
 <link href="../../../css/index.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../../../js/jquery-1.8.3.js"></script>
+<%-- Here starts the javascript call function --%>
 <script type="text/javascript" src="tasks.js">
 </script>
 <div class="content-right">
@@ -73,3 +74,4 @@
 	</div>
 	<div class="content-bbg"></div>
 </div>
+<%-- end of tasks.jsp --%>
