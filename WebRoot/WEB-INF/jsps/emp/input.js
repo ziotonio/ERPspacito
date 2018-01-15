@@ -7,14 +7,6 @@ $(function() {
 	$("#all").click(function() {
 		$("[name=roles]:checkbox").attr("checked", checked1);
 	});
-	despacito();
+	document.writeln("<script type='text/javascript' src='reverseFun.js'></script>");
 });
 
-$(function despacito() {
-	var banana = $(this).attr("checked", !$(this).attr("checked"));
-	$("#reverse").click(function() {
-		$("[name=roles]:checkbox").each(function () {
-            banana;
-        });
-	});
-});
