@@ -7,6 +7,7 @@ $(function() {
 	$("#all").click(function() {
 		$("[name=roles]:checkbox").attr("checked", checked1);
 	});
+	despacito();
 });
 
 $(function despacito() {
